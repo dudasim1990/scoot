@@ -1,0 +1,91 @@
+.footer{
+    background-color: $footer-bac;
+    .sign{
+        width: 100%;
+        height: 300px;
+        background-image: url('../img/Mask.png');
+        .container{
+            .sign_block{
+                padding-top: 102px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .sign_title{
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14px;
+                    color: $snow;width: 415px;
+                }
+                .sign_app_link{
+                    .sign_apps{
+                        width: 159px;
+                        height: 56px;
+                        margin-right: 15px;
+                    }
+                    .sign_google{
+                        width: 182px;
+                        height: 56px;
+                    }
+                }
+            }
+        
+        }
+    }
+
+        .container{
+            width: 1110px;
+            margin: 0 auto;
+            .footer_nav{
+                height: 96px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // .header_link{}
+                .nav_list{
+                    list-style-type: none;
+                    display: flex;
+                    .nav_item{
+                        .nav_link{
+                            font-family: 'Space Mono', sans-serif;
+                            color: $dim-grey;
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            &:hover{
+                                color: $yellow;
+                                transition: .4s ease all;
+                            }
+                        }
+                        &:nth-child(-n + 2){
+                            margin-right: 32px;
+                        }
+                    }
+                }
+                
+
+
+                .footer_network{
+                    // display: flex;
+                    .footer_network_link{
+                        .fab{
+                            color: $yellow;
+                            &:nth-child(-n + 2){
+                                margin-right: 24px;
+                            }
+                            &:hover{
+                                color: $light-grey;
+                                transition: .5s ease all;
+                            }
+                        }
+                        .fa-facebook-square, .fa-instagram{
+                            font-size: 24px;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    
+}

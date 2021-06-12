@@ -1,0 +1,32 @@
+// ==COLORS
+
+$yellow: #FCB72B;
+$dark-navy: #495567;
+$dim-grey: #939CAA;
+$light-grey: #E5ECF4;
+$snow: #F2F5F9;
+$light-yellow: #FFF4DF;
+$footer-bac: #333A44;
+
+%button{
+    background-color: $yellow;
+    width: 195px;
+    height: 53px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Space Mono', sans-serif;
+}
+%button-hover{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    font-family: 'Space Mono', sans-serif;
+    width: 195px;
+    height: 53px;
+    color: $yellow;
+    background-color: #F2F2F2;
+    border: 3px solid $yellow;
+}
