@@ -94,6 +94,25 @@ main{
                 margin-left: 95px;
                 margin-bottom: 40px;
                 color: #fff;
+                position: relative;
+                &::before{
+                    content: '';
+                    background-image: url('../img/simple-before.svg');
+                    position: absolute;
+                    width: 202px;
+                    height: 15px;
+                    // left: -95px;
+                    left: -259px;
+                }
+                &::after{
+                    content: '';
+                    background-image: url('../img/simple-after.svg');
+                    position: absolute;
+                    width: 447px;
+                    height: 150px;
+                    left: 445px;
+                    
+                }
             }
             .btn{
                 margin-left: 95px;

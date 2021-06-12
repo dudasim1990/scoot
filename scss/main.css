@@ -375,6 +375,25 @@ main .simple .container .simple_text {
   margin-left: 95px;
   margin-bottom: 40px;
   color: #fff;
+  position: relative;
+}
+
+main .simple .container .simple_text::before {
+  content: '';
+  background-image: url("../img/simple-before.svg");
+  position: absolute;
+  width: 202px;
+  height: 15px;
+  left: -259px;
+}
+
+main .simple .container .simple_text::after {
+  content: '';
+  background-image: url("../img/simple-after.svg");
+  position: absolute;
+  width: 447px;
+  height: 150px;
+  left: 445px;
 }
 
 main .simple .container .btn {
