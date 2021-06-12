@@ -488,23 +488,20 @@ main{
                             height: 445px;
                             border-radius: 50%;
                             position: absolute;
-                            top: 0;
-                            // right: 665px;
-                            left: 0;
                             top: -501px;
+                            left: 66.5px;
                         }
-                        &::before{
-                            content: '';
-                            background-color: $light-grey;
-                            position: absolute;
-                            background-size: 445px 445px;
-                            width: 445px;
-                            height: 445px;
-                            border-radius: 50%;
-                            top: 0;
-                            right: -1165px;
-                            
-                        }
+                        // &::before{
+                        //     content: '';
+                        //     background-color: $light-grey;
+                        //     position: absolute;
+                        //     background-size: 445px 445px;
+                        //     width: 445px;
+                        //     height: 445px;
+                        //     border-radius: 50%;
+                        //     top: 0;
+                        //     right: -1165px;
+                        // }
                        
                     }                
     
@@ -521,22 +518,22 @@ main{
                             height: 445px;
                             border-radius: 50%;
                             position: absolute;
-                            top: 0;
-                            left: 0;
+                            left: 66.5px;
                             top: -501px;
                         }
-                        &::after{
-                            content: '';
-                            background-color: $light-grey;
-                            position: absolute;
-                            background-size: 445px 445px;
-                            width: 445px;
-                            height: 445px;
-                            border-radius: 50%;
-                            top: 0;
-                            right: 1174px;
-                            right: 0;
-                        }
+
+                        // &::after{
+                        //     content: '';
+                        //     background-color: $light-grey;
+                        //     position: absolute;
+                        //     background-size: 445px 445px;
+                        //     width: 445px;
+                        //     height: 445px;
+                        //     border-radius: 50%;
+                        //     top: 0;
+                        //     right: 1174px;
+                        //     right: 0;
+                        // }
                     }
     
                     .zero{
@@ -549,24 +546,20 @@ main{
                             height: 445px;
                             border-radius: 50%;
                             position: absolute;
-                            // top: 0;
-                            // right: -665px;
-                            top: 0;
-                            // right: 665px;
-                            left: 0;
                             top: -501px;
+                            left: 66.5px;
                         }
-                        &::before{
-                            content: '';
-                            background-color: $light-grey;
-                            position: absolute;
-                            background-size: 445px 445px;
-                            width: 445px;
-                            height: 445px;
-                            border-radius: 50%;
-                            top: 0;
-                            right: -1165px;
-                        }
+                        // &::before{
+                        //     content: '';
+                        //     background-color: $light-grey;
+                        //     position: absolute;
+                        //     background-size: 445px 445px;
+                        //     width: 445px;
+                        //     height: 445px;
+                        //     border-radius: 50%;
+                        //     top: 0;
+                        //     right: -1165px;
+                        // }
                     }
                 }
             }

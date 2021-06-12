@@ -65,6 +65,46 @@
   margin-right: 32px;
 }
 
+@media only screen and (max-width: 768px) {
+  .header .container {
+    width: 573px;
+    margin: 0 auto;
+  }
+  .header .container .header_nav {
+    height: 96px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .container .header_nav .nav_list {
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .container .header_nav .nav_list .nav_item .nav_link {
+    font-family: 'Space Mono', sans-serif;
+    color: #495567;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  .header .container .header_nav .nav_list .nav_item .nav_link:hover {
+    color: #FCB72B;
+    -webkit-transition: .4s ease all;
+    transition: .4s ease all;
+  }
+  .header .container .header_nav .nav_list .nav_item:nth-child(-n + 2) {
+    margin-right: 32px;
+  }
+}
+
 .footer {
   background-color: #333A44;
 }
@@ -625,20 +665,8 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     height: 445px;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
     top: -501px;
-  }
-  main .advantage .container .advantage_box_wrapper .easy::before {
-    content: '';
-    background-color: #E5ECF4;
-    position: absolute;
-    background-size: 445px 445px;
-    width: 445px;
-    height: 445px;
-    border-radius: 50%;
-    top: 0;
-    right: -1165px;
+    left: 66.5px;
   }
   main .advantage .container .advantage_box_wrapper .coming {
     margin-left: 0;
@@ -652,21 +680,8 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     height: 445px;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 66.5px;
     top: -501px;
-  }
-  main .advantage .container .advantage_box_wrapper .coming::after {
-    content: '';
-    background-color: #E5ECF4;
-    position: absolute;
-    background-size: 445px 445px;
-    width: 445px;
-    height: 445px;
-    border-radius: 50%;
-    top: 0;
-    right: 1174px;
-    right: 0;
   }
   main .advantage .container .advantage_box_wrapper .zero {
     position: relative;
@@ -679,20 +694,8 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     height: 445px;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
     top: -501px;
-  }
-  main .advantage .container .advantage_box_wrapper .zero::before {
-    content: '';
-    background-color: #E5ECF4;
-    position: absolute;
-    background-size: 445px 445px;
-    width: 445px;
-    height: 445px;
-    border-radius: 50%;
-    top: 0;
-    right: -1165px;
+    left: 66.5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
