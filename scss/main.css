@@ -22,6 +22,14 @@
   border: 3px solid #FCB72B;
 }
 
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: #fff;
+}
+
 .header .container {
   width: 1110px;
   margin: 0 auto;
