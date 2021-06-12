@@ -2,7 +2,6 @@
 @import './block/header';
 @import './block/footer';
 
-
 @font-face {
     font-family: 'Space Mono';
     font-style: normal;
@@ -27,7 +26,6 @@
     url('../fonts/lexend-deca-v7-latin-ext_latin-regular.woff2') format('woff2'),
     url('../fonts/lexend-deca-v7-latin-ext_latin-regular.woff') format('woff');
 }
-
 
 *{
     margin: 0;
@@ -56,17 +54,15 @@ p{
     @extend %button-hover;
 }
 
-body{
-    // background-color: $snow;
-}
+// body{
+//     // background-color: $snow;
+// }
 
 
 .container{
     width: 1110px;
     margin: 0 auto;
 }
-
-
 
 main{
     .simple{
