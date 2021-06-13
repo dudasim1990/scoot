@@ -58,7 +58,6 @@ p{
 //     // background-color: $snow;
 // }
 
-
 .container{
     width: 1110px;
     margin: 0 auto;
@@ -106,7 +105,6 @@ main{
                     width: 447px;
                     height: 150px;
                     left: 445px;
-                    
                 }
             }
             .btn{
@@ -121,6 +119,7 @@ main{
         .container{
             .order_box_wrapper{
                 display: flex;
+                position: relative;
                 &::before{
                     content: '';
                     width: 954px;
@@ -128,8 +127,8 @@ main{
                     background-color: $light-grey;
                     position: absolute;
                     border: 7.5px solid $light-grey;
-                    left: 0;
-                    top: 954px;
+                    left: -10%;
+                    top: 40px;
                 }
 
                 .order_box{
@@ -316,12 +315,9 @@ main{
             }
         }
     }
-    
 }
 
-
 // =================== 768px 573px  =======================
-
 
 
 @media only screen and (max-width: 768px){
@@ -582,5 +578,268 @@ main{
 
 }
 
+// ====================375px  32 32 311===4958================ 
 
+@media only screen and (max-width: 375px){
+
+    .container{
+        width: 311px;
+        margin: 0 auto;
+    }
+    
+    main{
+        .simple{
+            height: 650px;
+            // width: 100%;
+            background-image: url('../img/simple.png');
+            margin-bottom: 160px;
+            .container{
+                .simple_title{
+                    width: 500px;
+                    padding-top: 153px;
+                    margin-bottom: 40px;
+                    font-size: 56px;
+                    line-height: 56px;
+                    letter-spacing: -2.5px;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                .simple_text{
+                    width: 405px;
+                    height: 100px;
+                    font-size: 15px;
+                    line-height: 25px;
+                    // padding-left: 95px;
+                    margin-left: 95px;
+                    margin-bottom: 40px;
+                    color: #fff;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        background-image: url('../img/simple-before.svg');
+                        position: absolute;
+                        width: 202px;
+                        height: 15px;
+                        left: -259px;
+                    }
+                    &::after{
+                        content: '';
+                        background-image: url('../img/simple-after.svg');
+                        position: absolute;
+                        width: 447px;
+                        height: 150px;
+                        left: 445px;
+                    }
+                }
+                .btn{
+                    margin-left: 95px;
+                }
+            }
+        }
+        
+        .order{
+            height: 291px;
+            margin-bottom: 200px;
+            .container{
+                .order_box_wrapper{
+                    display: flex;
+                    &::before{
+                        content: '';
+                        width: 954px;
+                        height: 1px;
+                        background-color: $light-grey;
+                        position: absolute;
+                        border: 7.5px solid $light-grey;
+                        left: 0;
+                        top: 954px;
+                    }
+    
+                    .order_box{
+                        position: relative;
+                        padding-top: 136px;
+                        width: 350px;
+                        height: 155px;
+                        .order_box_title{
+                            padding-bottom: 27px;
+                            font-size: 24px;
+                            line-height: 28px;
+                            letter-spacing: -1.07px;
+                            color: $dark-navy;
+                        } 
+                        .order_box_text{
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: $dim-grey;
+                        }
+                        &:nth-child(-n + 2){
+                            margin-right: 30px;
+                        }
+                    }
+                    .locate::before{
+                        content: '';
+                        background-color: $yellow;
+                        border-radius: 50%;
+                        background-image: url('../img/locate.svg');
+                        text-align: center;
+                        display: block;
+                        background-repeat: no-repeat;
+                        background-size: 38px 48px;
+                        background-position: center;
+                        width: 96px;
+                        height: 96px;          
+                        position: absolute;
+                        top: 0;
+                    }
+                    .scooter::before{
+                        content: '';
+                        background-color: $yellow;
+                        border-radius: 50%;
+                        background-image: url('../img/scooter.svg');
+                        text-align: center;
+                        display: block;
+                        background-repeat: no-repeat;
+                        background-size: 42px 33px;
+                        background-position: center;
+                        width: 96px;
+                        height: 96px;          
+                        position: absolute;
+                        top: 0;
+                    }
+                    .enjoy::before{
+                        content: '';
+                        background-color: $yellow;
+                        border-radius: 50%;
+                        background-image: url('../img/enjoy.svg');
+                        text-align: center;
+                        display: block;
+                        background-repeat: no-repeat;
+                        background-size: 40px 40px;
+                        background-position: center;
+                        width: 96px;
+                        height: 96px;          
+                        position: absolute;
+                        top: 0;
+                    }
+                }
+            }
+        }
+        
+        .advantage{
+            height: 1855px;
+            position: relative;
+            overflow: hidden;
+            .container{
+                .advantage_box_wrapper{
+                    .advantage_box{
+                        width: 445px;
+                        height: 445px;
+                        .advantage_title{
+                            padding-top: 66px;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: -2.14px;
+                            margin-bottom: 24px;
+                            color: $dark-navy;
+                        }
+                        .advantage_text{
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: $dim-grey;
+                            margin-bottom: 40px;
+                        }
+                        &:nth-child(-n + 2){
+                            margin-bottom: 200px;
+                        }
+                    }
+    
+    
+                    .easy{
+                        position: relative;
+    
+                        &::after{
+                            content: '';
+                            background-image: url('../img/easy.png');
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 0;
+                            right: -665px;
+                        }
+                        &::before{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: 0;
+                            right: -1165px;
+                        }
+                       
+                    }                
+    
+                 
+    
+                    .coming{
+                        margin-left: 665px;
+                        position: relative;
+                        &::before{
+                            content: '';
+                            background-image: url('../img/coming.png');
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 0;
+                            left: -665px;
+                        }
+                        &::after{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: 0;
+                            right: 1174px;
+                        }
+                    }
+    
+                    .zero{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            background-image: url('../img/zero.png');
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            position: absolute;
+                            top: 0;
+                            right: -665px;
+                        }
+                        &::before{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: 0;
+                            right: -1165px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+}
 
