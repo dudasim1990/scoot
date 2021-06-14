@@ -25,7 +25,7 @@
 .header {
   width: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   top: 0;
   background-color: #fff;
 }
@@ -563,6 +563,18 @@ main .advantage .container .advantage_box_wrapper .easy::before {
   right: -1165px;
 }
 
+main .advantage .container .advantage_box_wrapper .easy .easy_easy::after {
+  content: '';
+  background-image: url("../img/arrow_left.svg");
+  background-size: 740px 150px;
+  position: absolute;
+  width: 740px;
+  height: 150px;
+  z-index: 2;
+  top: 307px;
+  left: 541px;
+}
+
 main .advantage .container .advantage_box_wrapper .coming {
   margin-left: 665px;
   position: relative;
@@ -592,6 +604,16 @@ main .advantage .container .advantage_box_wrapper .coming::after {
   right: 1174px;
 }
 
+main .advantage .container .advantage_box_wrapper .coming .coming_coming::before {
+  content: '';
+  background-image: url("../img/arrow_right.svg");
+  position: absolute;
+  width: 735px;
+  height: 151px;
+  z-index: 2;
+  right: 925px;
+}
+
 main .advantage .container .advantage_box_wrapper .zero {
   position: relative;
 }
@@ -618,6 +640,18 @@ main .advantage .container .advantage_box_wrapper .zero::before {
   border-radius: 50%;
   top: 0;
   right: -1165px;
+}
+
+main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
+  content: '';
+  background-image: url("../img/arrow_left.svg");
+  background-size: 740px 150px;
+  position: absolute;
+  width: 740px;
+  height: 150px;
+  z-index: 2;
+  top: 85px;
+  left: 921px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -651,6 +685,25 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     margin-left: 0;
     margin-bottom: 32px;
     color: #fff;
+    position: relative;
+  }
+  main .simple .container .simple_text::before {
+    content: '';
+    display: none;
+    background-image: url("../img/simple-before.svg");
+    position: absolute;
+    width: 202px;
+    height: 15px;
+    left: -259px;
+  }
+  main .simple .container .simple_text::after {
+    content: '';
+    background-image: url("../img/simple-after.svg");
+    position: absolute;
+    width: 447px;
+    height: 150px;
+    left: -227px;
+    top: 175px;
   }
   main .simple .container .btn {
     margin-left: 196.5px;
@@ -791,6 +844,17 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     top: -501px;
     left: 66.5px;
   }
+  main .advantage .container .advantage_box_wrapper .easy::before {
+    content: '';
+    background-color: #E5ECF4;
+    position: absolute;
+    background-size: 445px 445px;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    top: -501px;
+    left: 575.5px;
+  }
   main .advantage .container .advantage_box_wrapper .coming {
     margin-left: 0;
     position: relative;
@@ -806,6 +870,17 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     left: 66.5px;
     top: -501px;
   }
+  main .advantage .container .advantage_box_wrapper .coming::after {
+    content: '';
+    background-color: #E5ECF4;
+    position: absolute;
+    background-size: 445px 445px;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    top: -501px;
+    right: 575.5px;
+  }
   main .advantage .container .advantage_box_wrapper .zero {
     position: relative;
   }
@@ -819,6 +894,17 @@ main .advantage .container .advantage_box_wrapper .zero::before {
     position: absolute;
     top: -501px;
     left: 66.5px;
+  }
+  main .advantage .container .advantage_box_wrapper .zero::before {
+    content: '';
+    background-color: #E5ECF4;
+    position: absolute;
+    background-size: 445px 445px;
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    top: -501px;
+    left: 575.5px;
   }
 }
 

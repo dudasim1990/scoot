@@ -1,6 +1,7 @@
 @import './block/general';
 @import './block/header';
 @import './block/footer';
+// @import './block/mtablet';
 
 @font-face {
     font-family: 'Space Mono';
@@ -217,6 +218,7 @@ main{
                         letter-spacing: -2.14px;
                         margin-bottom: 24px;
                         color: $dark-navy;
+                        
                     }
                     .advantage_text{
                         font-size: 15px;
@@ -255,8 +257,23 @@ main{
                         top: 0;
                         right: -1165px;
                     }
+                    .easy_easy{
+                        // background-color: rgb(99, 56, 56);
+                        &::after{
+                            content: '';
+                            background-image: url('../img/arrow_left.svg');
+                            background-size: 740px 150px;
+                            position: absolute;
+                            width: 740px;
+                            height: 150px;
+                            z-index: 2;
+                            top: 307px;
+                            left: 541px;
+                        }
+                    }
                    
-                }                
+                }   
+                             
 
              
 
@@ -285,6 +302,18 @@ main{
                         top: 0;
                         right: 1174px;
                     }
+                    .coming_coming{
+                        &::before{
+                            content: '';
+                            background-image: url('../img/arrow_right.svg');
+                            // background-size: 756px 151px;
+                            position: absolute;
+                            width: 735px;
+                            height: 151px;
+                            z-index: 2;
+                            right: 480+445px;
+                        }
+                    }
                 }
 
                 .zero{
@@ -310,6 +339,20 @@ main{
                         border-radius: 50%;
                         top: 0;
                         right: -1165px;
+                    }
+                    .zero_zero{
+                        // background-color: rgb(149, 226, 104);
+                        &::after{
+                            content: '';
+                            background-image: url('../img/arrow_left.svg');
+                            background-size: 740px 150px;
+                            position: absolute;
+                            width: 740px;
+                            height: 150px;
+                            z-index: 2;
+                            top: 85px;
+                            left: 921px;
+                        }
                     }
                 }
             }
@@ -353,6 +396,25 @@ main{
                     margin-left: 0;
                     margin-bottom: 32px;
                     color: #fff;
+                    position: relative;
+                    &::before{
+                        content: '';
+                        display: none;
+                        background-image: url('../img/simple-before.svg');
+                        position: absolute;
+                        width: 202px;
+                        height: 15px;
+                        left: -259px;
+                    }
+                    &::after{
+                        content: '';
+                        background-image: url('../img/simple-after.svg');
+                        position: absolute;
+                        width: 447px;
+                        height: 150px;
+                        left: -227px;
+                        top: 175px;
+                    }
                 }
                 .btn{
                     margin-left: 196.5px;
@@ -488,7 +550,6 @@ main{
     
                     .easy{
                         position: relative;
-    
                         &::after{
                             content: '';
                             background-image: url('../img/easy.png');
@@ -500,17 +561,17 @@ main{
                             top: -501px;
                             left: 66.5px;
                         }
-                        // &::before{
-                        //     content: '';
-                        //     background-color: $light-grey;
-                        //     position: absolute;
-                        //     background-size: 445px 445px;
-                        //     width: 445px;
-                        //     height: 445px;
-                        //     border-radius: 50%;
-                        //     top: 0;
-                        //     right: -1165px;
-                        // }
+                        &::before{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: -501px;
+                            left: 575.5px;
+                        }
                        
                     }                
     
@@ -531,18 +592,17 @@ main{
                             top: -501px;
                         }
 
-                        // &::after{
-                        //     content: '';
-                        //     background-color: $light-grey;
-                        //     position: absolute;
-                        //     background-size: 445px 445px;
-                        //     width: 445px;
-                        //     height: 445px;
-                        //     border-radius: 50%;
-                        //     top: 0;
-                        //     right: 1174px;
-                        //     right: 0;
-                        // }
+                        &::after{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: -501px;
+                            right: 575.5px;
+                        }
                     }
     
                     .zero{
@@ -558,17 +618,17 @@ main{
                             top: -501px;
                             left: 66.5px;
                         }
-                        // &::before{
-                        //     content: '';
-                        //     background-color: $light-grey;
-                        //     position: absolute;
-                        //     background-size: 445px 445px;
-                        //     width: 445px;
-                        //     height: 445px;
-                        //     border-radius: 50%;
-                        //     top: 0;
-                        //     right: -1165px;
-                        // }
+                        &::before{
+                            content: '';
+                            background-color: $light-grey;
+                            position: absolute;
+                            background-size: 445px 445px;
+                            width: 445px;
+                            height: 445px;
+                            border-radius: 50%;
+                            top: -501px;
+                            left: 575.5px;
+                        }
                     }
                 }
             }
@@ -578,7 +638,7 @@ main{
 
 }
 
-// ====================375px  32 32 311===4958================ 
+// ====================375px  32 32 311===4958================
 
 @media only screen and (max-width: 375px){
 
