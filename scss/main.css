@@ -855,6 +855,17 @@ main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
     top: -501px;
     left: 575.5px;
   }
+  main .advantage .container .advantage_box_wrapper .easy .easy_easy::after {
+    content: '';
+    background-image: url("../img/arrow_left.svg");
+    background-size: 740px 150px;
+    position: absolute;
+    width: 734px;
+    height: 150px;
+    z-index: 2;
+    top: -194px;
+    left: -50px;
+  }
   main .advantage .container .advantage_box_wrapper .coming {
     margin-left: 0;
     position: relative;
@@ -881,6 +892,17 @@ main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
     top: -501px;
     right: 575.5px;
   }
+  main .advantage .container .advantage_box_wrapper .coming .coming_coming::before {
+    content: '';
+    background-image: url("../img/arrow_right.svg");
+    position: absolute;
+    width: 735px;
+    height: 151px;
+    z-index: 2;
+    right: -300px;
+    top: -501px;
+    left: -483px;
+  }
   main .advantage .container .advantage_box_wrapper .zero {
     position: relative;
   }
@@ -905,6 +927,17 @@ main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
     border-radius: 50%;
     top: -501px;
     left: 575.5px;
+  }
+  main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
+    content: '';
+    background-image: url("../img/arrow_left.svg");
+    background-size: 740px 150px;
+    position: absolute;
+    width: 734px;
+    height: 150px;
+    z-index: 2;
+    top: -422px;
+    left: 320px;
   }
 }
 
