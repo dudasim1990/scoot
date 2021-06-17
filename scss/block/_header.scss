@@ -36,10 +36,11 @@
     }
 }
 
+// ================================================
 
 @media only screen and (max-width: 768px){
-    .header{
-        // width: 80%;
+    header{
+        width: 100%;
         .container{
             width: 573px;
             margin: 0 auto;
@@ -67,6 +68,78 @@
                             margin-right: 32px;
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// ================================================
+
+@media only screen and (max-width: 375px){
+    .header{
+        display: inline-block;
+        width: 100%;
+        width: 375px;
+        height: 64px;
+        position: fixed;
+        z-index: 4;
+        top: 0;
+        background-color: #fff;
+        .container{
+            width: 311px;
+            margin: 0 auto;
+            .header_nav{
+                height: 64px;
+                display: flex;
+                // justify-content: space-between;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+
+                .fas{
+                    color: $yellow;
+                    position: absolute;
+                    left: 0;
+                    width: 20px;
+                    height: 16px;
+                }
+                .fa-bars{
+                    width: 20px;
+                    height: 16px; 
+                }
+
+                .header_link{
+                    width: 75.5px;
+                    height: 20px;
+                    .header_link_img{
+                        width: 75.5px;
+                        height: 20px;
+                    }
+                }
+                .nav_list{
+                    // list-style-type: none;
+                    // display: flex;
+                    display: none;
+                    .nav_item{
+                        .nav_link{
+                            font-family: 'Space Mono', sans-serif;
+                            color: $dark-navy;
+                            font-size: 15px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            &:hover{
+                                color: $yellow;
+                                transition: .4s ease all;
+                            }
+                        }
+                        &:nth-child(-n + 2){
+                            margin-right: 32px;
+                        }
+                    }
+                }
+                .header_btn{
+                    display: none;
                 }
             }
         }

@@ -90,6 +90,7 @@
     
 }
 
+// =======================================
 
 @media only screen and (max-width: 768px){
     .footer{
@@ -101,7 +102,6 @@
             .container{
                 width: 573px;
                 .sign_block{
-
                     width: 457px;
                     padding-top: 62px;
                     display: flex;
@@ -113,7 +113,7 @@
                         font-size: 48px;
                         line-height: 48px;
                         letter-spacing: -2.14px;
-                        color: $snow;width: 415px;
+                        color: $snow;
                         margin-bottom: 40px;
                     }
                     .sign_app_link{
@@ -157,6 +157,120 @@
                             }
                             &:nth-child(-n + 2){
                                 margin-right: 32px;
+                            }
+                        }
+                    }
+                    
+    
+    
+                    .footer_network{
+                        // display: flex;
+                        .footer_network_link{
+                            .fab{
+                                color: $yellow;
+                                &:nth-child(-n + 2){
+                                    margin-right: 24px;
+                                }
+                                &:hover{
+                                    color: $light-grey;
+                                    transition: .5s ease all;
+                                }
+                            }
+                            .fa-facebook-square, .fa-instagram{
+                                font-size: 24px;
+                            }
+                        }
+                    }
+       
+                }
+            }
+        
+    }
+}
+
+// =======================================
+
+
+@media only screen and (max-width: 375px){
+    .footer{
+        background-color: $footer-bac;
+        .sign{
+            width: 100%;
+            height: 320px;
+            background-image: url('../img/footer-bac-mobile.png');
+            .container{
+                width: 311px;
+                .sign_block{
+                    width: 311px;
+                    padding-top: 88px;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+                    .sign_title{
+                        width: 311px;
+                        text-align: center;
+                        font-size: 32px;
+                        line-height: 32px;
+                        letter-spacing: -1.43px;
+                        color: $snow;
+                        margin-bottom: 40px;
+                    }
+                    .sign_app_link{
+                        height: 40px;
+                        .sign_apps{
+                            width: 114px;
+                            height: 40px;
+                            margin-right: 15px;
+                            .sign_apps_img{
+                                width: 114px;
+                                height: 40px;
+                            }
+                        }
+                        .sign_google{
+                            width: 130px;
+                            height: 40px;
+                            .sign_google_img{
+                                width: 130px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            
+            }
+        }
+    
+            .container{
+                width: 311px;
+                margin: 0 auto;
+                .footer_nav{
+                    height: 438px;
+                    padding-top: 64px;
+                    padding-bottom: 88px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    .nav_list{
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .nav_item{
+                            .nav_link{
+                                font-family: 'Space Mono', sans-serif;
+                                color: $dim-grey;
+                                font-size: 15px;
+                                font-weight: 700;
+                                line-height: 25px;
+                                &:hover{
+                                    color: $yellow;
+                                    transition: .4s ease all;
+                                }
+                            }
+                            &:nth-child(-n + 2){
+                                // margin-right: 32px;
+                                margin-right: 0;
                             }
                         }
                     }
