@@ -1,0 +1,186 @@
+// ================== CAREERS.html ===================
+
+.container{
+    width: 1110px;
+    margin: 0 auto;
+}
+
+main{
+    .careers{
+        height: 200px;
+        margin-top: 96px;
+        background-image: url('../img/careers.png');
+        background-repeat: no-repeat;
+        margin-bottom: 120px;
+        .container{
+            .careers_title{
+                font-size: 56px;
+                line-height: 56px;
+                letter-spacing: -2.5px;
+                color: #fff;
+                padding-top: 72px;
+            }
+        }
+    }
+    
+    
+    .join{
+        margin-bottom: 120px;
+        .container{
+            .join_box{
+                width: 445px;
+                height: 445px;
+                position: relative;
+                .join_title{
+                    color: $dark-navy;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14px;
+                    padding-top: 66px;
+                    margin-bottom: 24px;
+                }
+                .join_text{
+                    color: $dim-grey;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-bottom: 40px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-image: url('../img/care.png');
+                    @extend %round-img-desktop;
+                    right: -665px;
+                    top: 0;
+                }
+                &::before{
+                    content: '';
+                    background-image: url('../img/arrow_left.svg');
+                    background-size: 740px 150px;
+                    position: absolute;
+                    width: 740px;
+                    height: 150px;
+                    z-index: 2;
+                    top: 307px;
+                    left: 541px;
+
+                }
+            }
+            
+        }
+    }
+
+    .values{
+        margin-bottom: 120px;
+        .container{
+            .values__title{
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14px;
+                color: $dark-navy;
+                text-align: center;
+                margin-bottom: 103px;
+            }
+            .values_box_wrapper{
+                display: flex;
+                justify-content: space-between;
+                .values_box{
+                    height: 457px;
+                    width: 350px;
+                    text-align: center;
+                    padding-top: 199px;
+                    position: relative;
+                    .values_number{
+                        color: $dark-navy;
+                        width: 96px;
+                        height: 96px;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07px;
+                        padding: 34px;
+                        border-radius: 50%;
+                        background-color: $yellow;
+                        display: inline-block;
+                        margin-bottom: 32px;
+                        
+                    }
+                    .values_title{
+                        color: $dark-navy;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07px;
+                        margin-bottom: 27px;
+                    } 
+                    .values_text{
+                        color: $dim-grey;
+                        font-size: 15px;
+                        line-height: 25px;
+                    } 
+                }
+                .tech{
+                    &::before{
+                        content: '';
+                        background-image: url('../img/tech.png');
+                        @extend %values_box_img;
+                        top: 0;
+                        left: 55px;
+                    }
+                    
+                }
+                .integrity{
+                    &::before{
+                        content: '';
+                        background-image: url('../img/integrity.png');
+                        @extend %values_box_img;
+                        top: 0;
+                        left: 55px;
+                    }
+                    
+                }
+                .community{
+                    &::before{
+                        content: '';
+                        background-image: url('../img/community.png');
+                        @extend %values_box_img;
+                        top: 0;
+                        left: 55px;
+                    }
+                    
+                }
+            } 
+        }
+    }
+
+
+    .employ{
+       .container{
+           .employ_box{
+               width: 1110px;
+               height: 128px;
+               padding: 32px 64px 35px 40px;
+               background-color: $snow;
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 24px;
+               .employ_person{
+                .employ_title{
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.07px;
+                    color: $dark-navy;
+                    margin-bottom: 8px;
+                }
+                .employ_place{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-navy;
+                }
+
+               }
+
+           }
+       } 
+    }
+    
+}
+

@@ -3,7 +3,7 @@
 @import './block/footer';
 @import './block/about';
 @import './block/careers';
-@import './block/location';
+@import './block/maps';
 
 // @import './block/mtablet';
 
@@ -58,7 +58,6 @@ p{
     @extend %button-hover;
 }
 
-body{}
 
 .container{
     width: 1110px;
@@ -1292,9 +1291,7 @@ main{
 
 
 
-
-
-
+// ===================================
 
 
 

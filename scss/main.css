@@ -24,7 +24,7 @@
   border: 3px solid #FCB72B;
 }
 
-main .advantage .container .advantage_box_wrapper .advantage_box, main .blurb .container .blurb_box_wrapper .mobility::after, main .blurb .container .blurb_box_wrapper .better::before {
+main .join .container .join_box::after, main .advantage .container .advantage_box_wrapper .advantage_box, main .blurb .container .blurb_box_wrapper .mobility::after, main .blurb .container .blurb_box_wrapper .better::before {
   width: 445px;
   height: 445px;
   border-radius: 50%;
@@ -525,6 +525,355 @@ main .values .container .values_box_wrapper .tech::before, main .values .contain
   }
   .footer .container .footer_nav .footer_network .footer_network_link .fa-facebook-square, .footer .container .footer_nav .footer_network .footer_network_link .fa-instagram {
     font-size: 24px;
+  }
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+main .careers {
+  height: 200px;
+  margin-top: 96px;
+  background-image: url("../img/careers.png");
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+
+main .careers .container .careers_title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+  padding-top: 72px;
+}
+
+main .join {
+  margin-bottom: 120px;
+}
+
+main .join .container .join_box {
+  width: 445px;
+  height: 445px;
+  position: relative;
+}
+
+main .join .container .join_box .join_title {
+  color: #495567;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  padding-top: 66px;
+  margin-bottom: 24px;
+}
+
+main .join .container .join_box .join_text {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 40px;
+}
+
+main .join .container .join_box::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/care.png");
+  right: -665px;
+  top: 0;
+}
+
+main .join .container .join_box::before {
+  content: '';
+  background-image: url("../img/arrow_left.svg");
+  background-size: 740px 150px;
+  position: absolute;
+  width: 740px;
+  height: 150px;
+  z-index: 2;
+  top: 307px;
+  left: 541px;
+}
+
+main .values {
+  margin-bottom: 120px;
+}
+
+main .values .container .values__title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  text-align: center;
+  margin-bottom: 103px;
+}
+
+main .values .container .values_box_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .values .container .values_box_wrapper .values_box {
+  height: 457px;
+  width: 350px;
+  text-align: center;
+  padding-top: 199px;
+  position: relative;
+}
+
+main .values .container .values_box_wrapper .values_box .values_number {
+  color: #495567;
+  width: 96px;
+  height: 96px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  padding: 34px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+main .values .container .values_box_wrapper .values_box .values_title {
+  color: #495567;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  margin-bottom: 27px;
+}
+
+main .values .container .values_box_wrapper .values_box .values_text {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main .values .container .values_box_wrapper .tech::before {
+  content: '';
+  background-image: url("../img/tech.png");
+  top: 0;
+  left: 55px;
+}
+
+main .values .container .values_box_wrapper .integrity::before {
+  content: '';
+  background-image: url("../img/integrity.png");
+  top: 0;
+  left: 55px;
+}
+
+main .values .container .values_box_wrapper .community::before {
+  content: '';
+  background-image: url("../img/community.png");
+  top: 0;
+  left: 55px;
+}
+
+main .employ .container .employ_box {
+  width: 1110px;
+  height: 128px;
+  padding: 32px 64px 35px 40px;
+  background-color: #F2F5F9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+main .employ .container .employ_box .employ_person .employ_title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+  margin-bottom: 8px;
+}
+
+main .employ .container .employ_box .employ_person .employ_place {
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+main .locations {
+  width: 100%;
+  height: 200px;
+  margin-top: 96px;
+  background-image: url("../img/careers.png");
+  background-repeat: no-repeat;
+  margin-bottom: 120px;
+}
+
+main .locations .container .locations_title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+  padding-top: 72px;
+}
+
+main .map .container .map_img {
+  height: 543px;
+  margin-bottom: 120px;
+}
+
+main .map .container .list_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  margin-bottom: 120px;
+}
+
+main .map .container .list_wrapper .list_title {
+  width: 351px;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+}
+
+main .map .container .list_wrapper .list_text {
+  width: 445px;
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 573px;
+    margin: 0 auto;
+  }
+  main .locations {
+    height: 200px;
+    margin-top: 96px;
+    background-image: url("../img/careers.png");
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+  }
+  main .locations .container .locations_title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #fff;
+    padding-top: 72px;
+  }
+  main .map .container .map_img {
+    width: 689px;
+    height: 337px;
+    margin-bottom: 120px;
+  }
+  main .map .container .list_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 304px;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+  main .map .container .list_wrapper .list_title {
+    width: 457px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: #495567;
+    margin-bottom: 40px;
+  }
+  main .map .container .list_wrapper .list_text {
+    width: 573px;
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    width: 311px;
+    margin: 0 auto;
+  }
+  main .locations {
+    width: 100%;
+    height: 200px;
+    margin-top: 96px;
+    background-image: url("../img/careers.png");
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+  }
+  main .locations .container .locations_title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #fff;
+    padding-top: 72px;
+  }
+  main .map .map_img {
+    width: 311px;
+    height: 152px;
+    margin-bottom: 120px;
+  }
+  main .map .container .list_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 304px;
+    text-align: center;
+    margin-bottom: 120px;
+  }
+  main .map .container .list_wrapper .list_title {
+    width: 457px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    color: #495567;
+    margin-bottom: 40px;
+  }
+  main .map .container .list_wrapper .list_text {
+    width: 573px;
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
   }
 }
 
