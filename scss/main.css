@@ -11,6 +11,8 @@
 }
 
 .btn:hover {
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
   font-weight: bold;
   font-size: 15px;
   line-height: 25px;
@@ -20,6 +22,20 @@
   color: #FCB72B;
   background-color: #F2F2F2;
   border: 3px solid #FCB72B;
+}
+
+main .advantage .container .advantage_box_wrapper .advantage_box, main .blurb .container .blurb_box_wrapper .mobility::after, main .blurb .container .blurb_box_wrapper .better::before {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+}
+
+main .values .container .values_box_wrapper .tech::before, main .values .container .values_box_wrapper .integrity::before, main .values .container .values_box_wrapper .community::before {
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .header {
@@ -48,6 +64,10 @@
           align-items: center;
 }
 
+.header .container .header_nav .fas {
+  display: none;
+}
+
 .header .container .header_nav .nav_list {
   list-style-type: none;
   display: -webkit-box;
@@ -73,9 +93,13 @@
   margin-right: 32px;
 }
 
+.header .container .header_nav .header_btn {
+  display: inline-block;
+}
+
 @media only screen and (max-width: 768px) {
   header {
-    width: 100%;
+    width: 768px;
   }
   header .container {
     width: 573px;
@@ -145,6 +169,7 @@
     position: relative;
   }
   .header .container .header_nav .fas {
+    display: inline-block;
     color: #FCB72B;
     position: absolute;
     left: 0;
@@ -701,11 +726,6 @@ main .advantage {
   overflow: hidden;
 }
 
-main .advantage .container .advantage_box_wrapper .advantage_box {
-  width: 445px;
-  height: 445px;
-}
-
 main .advantage .container .advantage_box_wrapper .advantage_box .advantage_title {
   padding-top: 66px;
   font-size: 48px;
@@ -843,6 +863,296 @@ main .advantage .container .advantage_box_wrapper .zero .zero_zero::after {
   z-index: 2;
   top: 85px;
   left: 921px;
+}
+
+main .about {
+  height: 200px;
+  margin-top: 96px;
+  background-image: url("../img/about-bac.png");
+  margin-bottom: 120px;
+}
+
+main .about .about_title {
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #fff;
+  padding-top: 72px;
+}
+
+main .blurb .container .blurb_box_wrapper .blurb_box {
+  width: 445px;
+  height: 445px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+main .blurb .container .blurb_box_wrapper .blurb_box .blurb_title {
+  color: #495567;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.5px;
+  padding-top: 125px;
+  margin-bottom: 24px;
+}
+
+main .blurb .container .blurb_box_wrapper .blurb_box .blurb_text {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main .blurb .container .blurb_box_wrapper .mobility::after {
+  content: '';
+  position: absolute;
+  background-image: url("../img/mobility.png");
+  right: -665px;
+  top: 0;
+}
+
+main .blurb .container .blurb_box_wrapper .better {
+  margin-left: 665px;
+}
+
+main .blurb .container .blurb_box_wrapper .better::before {
+  content: '';
+  position: absolute;
+  background-image: url("../img/better.png");
+  left: -665px;
+  top: 0;
+}
+
+main .values {
+  margin-bottom: 120px;
+}
+
+main .values .container .values__title {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  text-align: center;
+  margin-bottom: 103px;
+}
+
+main .values .container .values_box_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .values .container .values_box_wrapper .values_box {
+  height: 457px;
+  width: 350px;
+  text-align: center;
+  padding-top: 199px;
+  position: relative;
+}
+
+main .values .container .values_box_wrapper .values_box .values_number {
+  color: #495567;
+  width: 96px;
+  height: 96px;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  padding: 34px;
+  border-radius: 50%;
+  background-color: #FCB72B;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+main .values .container .values_box_wrapper .values_box .values_title {
+  color: #495567;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  margin-bottom: 27px;
+}
+
+main .values .container .values_box_wrapper .values_box .values_text {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+main .values .container .values_box_wrapper .tech::before {
+  content: '';
+  background-image: url("../img/tech.png");
+  top: 0;
+  left: 55px;
+}
+
+main .values .container .values_box_wrapper .integrity::before {
+  content: '';
+  background-image: url("../img/integrity.png");
+  top: 0;
+  left: 55px;
+}
+
+main .values .container .values_box_wrapper .community::before {
+  content: '';
+  background-image: url("../img/community.png");
+  top: 0;
+  left: 55px;
+}
+
+main .faqs {
+  margin-bottom: 144px;
+}
+
+main .faqs .container .faqs__title {
+  color: #495567;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+main .faqs .container .faqs_works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 48px;
+}
+
+main .faqs .container .faqs_works .faqs_title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: #495567;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper {
+  width: 730px;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box {
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 730px;
+  background-color: #F2F5F9;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box:hover {
+  background-color: #FFF4DF;
+  -webkit-transition: .7s ease all;
+  transition: .7s ease all;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box .question {
+  color: #495567;
+  height: 92px;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 32px 40px;
+  position: relative;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box .question input {
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box .question .fas {
+  color: #FCB72B;
+  position: absolute;
+  top: 32px;
+  right: 40px;
+}
+
+main .faqs .container .faqs_works .faqs_answers_wrapper .faqs_box #text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+  padding: 32px 40px;
+}
+
+main .faqs .container .faqs_safe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .faqs .container .faqs_safe .faqs_title {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.79px;
+  color: #495567;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper {
+  width: 730px;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box {
+  display: block;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 730px;
+  background-color: #F2F5F9;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box:hover {
+  background-color: #FFF4DF;
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box .question {
+  color: #495567;
+  height: 92px;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 32px 40px;
+  position: relative;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box .question input {
+  opacity: 1;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  display: none;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box .question .fas {
+  color: #FCB72B;
+  position: absolute;
+  top: 32px;
+  right: 40px;
+}
+
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+  padding: 32px 40px;
 }
 
 @media only screen and (max-width: 768px) {

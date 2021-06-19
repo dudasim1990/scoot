@@ -20,6 +20,7 @@ $footer-bac: #333A44;
     font-family: 'Space Mono', sans-serif;
 }
 %button-hover{
+    transition: .4s ease all;
     font-weight: bold;
     font-size: 15px;
     line-height: 25px;
@@ -30,3 +31,32 @@ $footer-bac: #333A44;
     background-color: #F2F2F2;
     border: 3px solid $yellow;
 }
+
+%round-img-desktop{
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+}
+
+%values_box_img{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
