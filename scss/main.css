@@ -44,6 +44,8 @@ main .values .container .values_box_wrapper .tech::before, main .values .contain
   z-index: 4;
   top: 0;
   background-color: #fff;
+  -webkit-box-shadow: 0 3px 5px 0px #939CAA;
+          box-shadow: 0 3px 5px 0px #939CAA;
 }
 
 .header .container {
