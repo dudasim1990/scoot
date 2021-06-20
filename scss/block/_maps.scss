@@ -1,13 +1,12 @@
 // ============ LOCATION.html =================
 
-
 .container{
     width: 1110px;
     margin: 0 auto;
 }
 
 main{
-
+    
     .locations{
         width: 100%;
         height: 200px;
@@ -25,7 +24,7 @@ main{
             }
         }
     }
-
+    
     .map{
         .container_img{
             width: 1110px;
@@ -37,6 +36,9 @@ main{
             }
         }
         .container{
+            .place{
+                display: none;
+            }
             .list_wrapper{
                 display: flex;
                 align-items: center;
@@ -44,11 +46,11 @@ main{
                 height: 100px;
                 margin-bottom: 120px;
                 .list_title{
-                   width: 351px;
-                   font-size: 48px;
-                   line-height: 48px;
-                   letter-spacing: -2.14px;
-                   color: $dark-navy;
+                    width: 351px;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14px;
+                    color: $dark-navy;
                 }
                 .list_text{
                     width: 445px;
@@ -59,158 +61,169 @@ main{
             }
         }
     }
-
-
+    
+    
 }
 
-
-
-
+// ==========================================
 
 @media only screen and (max-width: 768px){
-
+    
     .container{
         width: 573px;
         margin: 0 auto;
     }
-
-main{
-
-    .locations{
-        height: 200px;
-        margin-top: 96px;
-        background-image: url('../img/careers.png');
-        background-repeat: no-repeat;
-        margin-bottom: 120px;
-        .container{
-            .locations_title{
-                font-size: 56px;
-                line-height: 56px;
-                letter-spacing: -2.5px;
-                color: #fff;
-                padding-top: 72px;
-            }
-        }
-    }
-
-    .map{
-        .container_img{
-            width: 689px;
-            margin: 0 auto;
-            .map_img{
-                width: 689px;
-                height: 337px;
-                margin-bottom: 120px;
-            }
-        }
-        .container{
-            .list_wrapper{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                height: 304px;
-                text-align: center;
-                margin-bottom: 120px;
-                .list_title{
-                   width: 457px;
-                   font-size: 48px;
-                   line-height: 48px;
-                   letter-spacing: -2.14px;
-                   color: $dark-navy;
-                   margin-bottom: 40px;
-                }
-                .list_text{
-                    width: 573px;
-                    color: $dim-grey;
-                    font-size: 15px;
-                    line-height: 25px;
-                    margin-bottom: 40px;
-                }
-            }
-        }
-    }
-}
-
-
-}
     
+    main{
+        
+        .locations{
+            height: 200px;
+            margin-top: 96px;
+            background-image: url('../img/careers.png');
+            background-repeat: no-repeat;
+            margin-bottom: 120px;
+            .container{
+                .locations_title{
+                    font-size: 56px;
+                    line-height: 56px;
+                    letter-spacing: -2.5px;
+                    color: #fff;
+                    padding-top: 72px;
+                }
+            }
+        }
+        
+        .map{
+            .container_img{
+                width: 689px;
+                margin: 0 auto;
+                margin-bottom: 120px;
+                .map_img{
+                    width: 689px;
+                    height: 337px;
+                    margin-bottom: 120px;
+                }
+            }
+            .container{
+                .list_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 304px;
+                    text-align: center;
+                    margin-bottom: 120px;
+                    .list_title{
+                        width: 457px;
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: -2.14px;
+                        color: $dark-navy;
+                        margin-bottom: 40px;
+                    }
+                    .list_text{
+                        width: 573px;
+                        color: $dim-grey;
+                        font-size: 15px;
+                        line-height: 25px;
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
 
-// =========================
+}
 
-
+// ==========================================
 
 @media only screen and (max-width: 375px){
-
+    
     .container{
         width: 311px;
         margin: 0 auto;
     }
-
-main{
-
-    .locations{
-        width: 100%;
-        height: 200px;
-        margin-top: 96px;
-        background-image: url('../img/careers.png');
-        background-repeat: no-repeat;
-        margin-bottom: 120px;
-        .container{
-            .locations_title{
-                font-size: 56px;
-                line-height: 56px;
-                letter-spacing: -2.5px;
-                color: #fff;
-                padding-top: 72px;
+    
+    main{
+        
+        .locations{
+            width: 100%;
+            height: 160px;
+            margin-top: 64px;
+            background-image: url('../img/careers.png');
+            background-repeat: no-repeat;
+            margin-bottom: 72px;
+            text-align: center;
+            .container{
+                .locations_title{
+                    font-size: 40px;
+                    line-height: 40px;
+                    letter-spacing: -1.79px;
+                    color: #fff;
+                    padding-top: 60px;
+                }
             }
         }
-    }
-
-    .map{
-        .container_img{
-            width: 311px;
-            margin: 0 auto;
-            .map_img{
+        
+        .map{
+            .container_img{
                 width: 311px;
-                height: 152px;
-                margin-bottom: 120px;
-            }
-        }
-        .container{      
-            .list_wrapper{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                height: 304px;
-                text-align: center;
-                margin-bottom: 120px;
-                .list_title{
-                   width: 457px;
-                   font-size: 48px;
-                   line-height: 48px;
-                   letter-spacing: -2.14px;
-                   color: $dark-navy;
-                   margin-bottom: 40px;
+                margin: 0 auto;
+                margin-bottom: 40px;
+                .map_img{
+                    width: 311px;
+                    height: 152px;
+                    margin-bottom: 120px;
                 }
-                .list_text{
-                    width: 573px;
-                    color: $dim-grey;
-                    font-size: 15px;
-                    line-height: 25px;
-                    margin-bottom: 40px;
+            }
+            .container{ 
+                .place{
+                    display: block;
+                    margin-bottom: 56px;
+                    .place_box{
+                        width: 311px;
+                        height: 72px;
+                        background-color: $light-yellow;
+                        text-align: center;
+                        margin-bottom: 16px;
+                        padding-top: 22px;
+                        .place_title{
+                            color: $dark-navy;
+                            font-size: 24px;
+                            line-height: 28px;
+                        }
+                    }
+                }     
+                .list_wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 304px;
+                    text-align: center;
+                    margin-bottom: 72px;
+                    .list_title{
+                        width: 311px;
+                        font-size: 32px;
+                        line-height: 32px;
+                        letter-spacing: -1.43px;
+                        color: $dark-navy;
+                        margin-bottom: 32px;
+                    }
+                    .list_text{
+                        width: 311px;
+                        color: $dim-grey;
+                        font-size: 15px;
+                        line-height: 25px;
+                        margin-bottom: 32px;
+                    }
                 }
             }
         }
     }
-
-
+    
 }
 
-
-}
-  
 
 
 
