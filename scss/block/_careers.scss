@@ -153,6 +153,7 @@ main{
 
 
     .employ{
+        margin-bottom: 160px;
        .container{
            .employ_box{
                width: 1110px;
@@ -184,3 +185,120 @@ main{
     
 }
 
+
+
+
+
+@media only screen and (max-width: 768px){
+
+    .container{
+        width: 689px;
+        margin: 0 auto;
+    }
+
+    main{
+        .careers{
+            height: 200px;
+            margin-top: 96px;
+            background-image: url('../img/careers.png');
+            background-repeat: no-repeat;
+            margin-bottom: 120px;
+            .container{
+                .careers_title{
+                    font-size: 56px;
+                    line-height: 56px;
+                    letter-spacing: -2.5px;
+                    color: #fff;
+                    padding-top: 72px;
+                }
+            }
+        }
+
+          
+    .join{
+        margin-bottom: 120px;
+        .container{
+            .join_box{
+                width: 573px;
+                height: 813px;
+                position: relative;
+                text-align: center;
+                .join_title{
+                    color: $dark-navy;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: -2.14px;
+                    padding-top: 509px;
+                    margin-bottom: 40px;
+                }
+                .join_text{
+                    color: $dim-grey;
+                    font-size: 15px;
+                    line-height: 25px;
+                    margin-bottom: 40px;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background-image: url('../img/care.png');
+                    top: 0;
+                    left: 64px;
+                }
+                &::before{
+                    content: '';
+                    background-image: url('../img/arrow_left.svg');
+                    background-size: 740px 150px;
+                    position: absolute;
+                    width: 740px;
+                    height: 150px;
+                    z-index: 2;
+                    top: 307px;
+                    left: -70px;
+                }
+            }
+            
+        }
+    }
+
+
+    
+    .employ{
+        margin-bottom: 120px;
+       .container{
+           width: 689px;
+           margin: 0 auto;
+           .employ_box{
+               width: 689px;
+               height: 128px;
+               padding: 32px 64px 35px 40px;
+               background-color: $snow;
+               display: flex;
+               justify-content: space-between;
+               margin-bottom: 16px;
+               .employ_person{
+                .employ_title{
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: -1.07px;
+                    color: $dark-navy;
+                    margin-bottom: 8px;
+                }
+                .employ_place{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $dark-navy;
+                }
+
+               }
+
+           }
+       } 
+    }
+    
+
+
+
+
+    }
+    
+}

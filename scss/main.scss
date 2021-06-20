@@ -257,7 +257,6 @@ main{
                         right: -1165px;
                     }
                     .easy_easy{
-                        // background-color: rgb(99, 56, 56);
                         &::after{
                             content: '';
                             background-image: url('../img/arrow_left.svg');
@@ -302,7 +301,6 @@ main{
                         &::before{
                             content: '';
                             background-image: url('../img/arrow_right.svg');
-                            // background-size: 756px 151px;
                             position: absolute;
                             width: 735px;
                             height: 151px;
@@ -337,7 +335,6 @@ main{
                         right: -1165px;
                     }
                     .zero_zero{
-                        // background-color: rgb(149, 226, 104);
                         &::after{
                             content: '';
                             background-image: url('../img/arrow_left.svg');
@@ -378,6 +375,7 @@ main{
     }
     
     .blurb{
+        overflow: hidden;
         .container{
             .blurb_box_wrapper{
                 .blurb_box{
@@ -408,6 +406,16 @@ main{
                         right: -665px;
                         top: 0;
                     }
+                    &::before{
+                        content: '';
+                        background-image: url('../img/arrow-blurb-left.svg');
+                        width: 741px;
+                        height: 151px;
+                        position: absolute;
+                        z-index: 2;
+                        top: 268px;
+                        left: 541px;
+                    }
                 }
                 .better{
                     margin-left: 665px;
@@ -418,6 +426,16 @@ main{
                         @extend %round-img-desktop;
                         left: -665px;
                         top: 0;
+                    }
+                    &::after{
+                        content: '';
+                        background-image: url('../img/arrow_right.svg');
+                        width: 741px;
+                        height: 151px;
+                        position: absolute;
+                        z-index: 2;
+                        top: 0px;
+                        right: 925px;
                     }
                 }
             } 
@@ -633,7 +651,7 @@ main{
                             }
                             
                         }
-                        #text{
+                        #texts{
                             font-size: 15px;
                             line-height: 25px;
                             color: $dark-navy;
@@ -653,10 +671,6 @@ main{
     
     
 }
-
-
-
-
 
 
 // =================== 768px 573px  =========================
@@ -920,8 +934,6 @@ main{
                                 height: 151px;
                                 z-index: 2;
                                 right: -300px;
-                                // right: 480+445px;
-                                // left: -386px;
                                 top: -501px;
                                 left: -483px;
                             }
@@ -969,15 +981,11 @@ main{
                 }
             }
         }
-        
     }
     
 }
 
-
 // ============= ABOUT =================
-
-
 
 @media only screen and (max-width: 768px){
     .container{
@@ -1036,6 +1044,16 @@ main{
                             left: 64px;
                             top: 0;
                         }
+                        &::before{
+                            content: '';
+                            background-image: url('../img/arrow-blurb-left.svg');
+                            width: 741px;
+                            height: 151px;
+                            position: absolute;
+                            z-index: 2;
+                            top: 264px;
+                            left: -66px;
+                        }
                     }
                     .better{
                         margin-left: 665px;
@@ -1044,11 +1062,18 @@ main{
                             content: '';
                             position: absolute;
                             background-image: url('../img/better.png');
-                            // @extend %round-img-desktop;
-                            // left: -665px;
-                            // top: 0;
                             left: 64px;
                             top: 0;
+                        }
+                        &::after{
+                            content: '';
+                            background-image: url('../img/arrow_right.svg');
+                            width: 741px;
+                            height: 151px;
+                            position: absolute;
+                            z-index: 2;
+                            top: 0px;
+                            right: 325px;
                         }
                     }
                 } 
@@ -1056,7 +1081,7 @@ main{
         }
         
         .values{
-            margin-bottom: 120px;
+            margin-bottom: 65px;
             .container{
                 .values__title{
                     font-size: 48px;
@@ -1289,14 +1314,7 @@ main{
     
 }
 
-
-
 // ===================================
-
-
-
-
-
 
 
 // ====================375px  32 32 311=== 4958 ================
@@ -1494,7 +1512,7 @@ main{
                     .easy{
                         position: relative;
                         &::before{
-                            content: '!!!';
+                            content: '';
                             background-image: url('../img/easy.png');
                             width: 311px;
                             height: 311px;
@@ -1517,7 +1535,6 @@ main{
                             right: -1165px;
                         }
                         .easy_easy{
-                            // background-color: rgb(99, 56, 56);
                             &::after{
                                 display: none;
                                 content: '';

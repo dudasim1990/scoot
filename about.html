@@ -139,7 +139,7 @@
                         
                         <label class="faqs_box faqs_answer">
                             
-                            <h3 class="question">How do I download the app?  
+                            <h3 class="question">Can I find a nearby Scoots?
                                 
                                 <span>
                                     <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -155,7 +155,7 @@
                         
                         <label class="faqs_box faqs_answer">
                             
-                            <h3 class="question">How do I download the app?  
+                            <h3 class="question">Do I need a license to ride?  
                                 
                                 <span>
                                     <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -179,7 +179,23 @@
                         
                         <label class="faqs_box faqs_answer">
                             
-                            <h3 class="question">How do I download the app?  
+                            <h3 class="question">Should I wear a helmet?
+                                
+                                <span>
+                                    <input type="checkbox" id="myChecks" onclick="displayChange()">
+                                    <i class="fas fa-chevron-up" id="ups" style="display: none;"></i>
+                                    <i  class="fas fa-chevron-down" id="downs" style="display: block;"></i>
+                                </span> 
+                            </h3>
+                            <p class="response" id="texts" style="display:none" >
+                                Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
+                            </p>
+                            
+                        </label>
+                        
+                        <label class="faqs_box faqs_answer">
+                            
+                            <h3 class="question">How about the rules & regulations? 
                                 
                                 <span>
                                     <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -195,23 +211,7 @@
                         
                         <label class="faqs_box faqs_answer">
                             
-                            <h3 class="question">How do I download the app?  
-                                
-                                <span>
-                                    <input type="checkbox" id="myCheck" onclick="myFunction()">
-                                    <i class="fas fa-chevron-up" id="up" style="display: none;" ></i>
-                                    <i  class="fas fa-chevron-down" id="down" style="display: block;" ></i>
-                                </span> 
-                            </h3>
-                            <p class="response" id="text" style="display:none" >
-                                To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.
-                            </p>
-                            
-                        </label>
-                        
-                        <label class="faqs_box faqs_answer">
-                            
-                            <h3 class="question">How do I download the app?  
+                            <h3 class="question">What if I damage my Scoot?
                                 
                                 <span>
                                     <input type="checkbox" id="myCheck" onclick="myFunction()">
@@ -230,7 +230,6 @@
                 
             </div>
         </section>
-        
         
     </main>
     
@@ -259,16 +258,15 @@
                 </a>
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_link">About</a>
+                        <a href="./about.html" class="nav_link">About</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Location</a>
+                        <a href="./maps.html" class="nav_link">Location</a>
                     </li>
                     <li class="nav_item">
-                        <a href="#" class="nav_link">Careers</a>
+                        <a href="./careers.html" class="nav_link">Careers</a>
                     </li>
                 </ul>
-                <!-- <button class="btn">Get Scootin</button> -->
                 
                 <div class="footer_network">
                     <a href="https://www.facebook.com/" target="_blank" class="footer_network_link">
@@ -288,13 +286,14 @@
         
     </footer>
     
-    <!-- <button class="btn">learn</button> -->
-    
     <script>
         
         function myFunction() {
             var checkBox = document.getElementById("myCheck");
             var text = document.getElementById("text");
+            var up = document.getElementById("up");
+            var down = document.getElementById("down");
+            
             
             if (checkBox.checked == true){
                 text.style.display = "block";
@@ -303,8 +302,34 @@
                 
             } else {
                 text.style.display = "none";
+                up.style.display = "none";
+                down.style.display = "block";
             }
         }
+
+
+
+        
+        function displayChange() {
+            var checkBox = document.getElementById("myChecks");
+            var texts = document.getElementById("texts");
+            var ups = document.getElementById("ups");
+            var downs = document.getElementById("downs");
+            
+            
+            if (checkBox.checked == true){
+                texts.style.display = "block";
+                ups.style.display = "block";
+                downs.style.display = "none";
+                
+            } else {
+                texts.style.display = "none";
+                ups.style.display = "none";
+                downs.style.display = "block";
+            }
+        }
+
+       
         
     </script>
     

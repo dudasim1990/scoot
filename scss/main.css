@@ -64,6 +64,14 @@ main .values .container .values_box_wrapper .tech::before, main .values .contain
           align-items: center;
 }
 
+.header .container .header_nav nav {
+  display: none;
+}
+
+.header .container .header_nav nav #menuToggle {
+  display: none;
+}
+
 .header .container .header_nav .fas {
   display: none;
 }
@@ -674,6 +682,10 @@ main .values .container .values_box_wrapper .community::before {
   left: 55px;
 }
 
+main .employ {
+  margin-bottom: 160px;
+}
+
 main .employ .container .employ_box {
   width: 1110px;
   height: 128px;
@@ -702,6 +714,100 @@ main .employ .container .employ_box .employ_person .employ_place {
   color: #495567;
 }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 689px;
+    margin: 0 auto;
+  }
+  main .careers {
+    height: 200px;
+    margin-top: 96px;
+    background-image: url("../img/careers.png");
+    background-repeat: no-repeat;
+    margin-bottom: 120px;
+  }
+  main .careers .container .careers_title {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+    color: #fff;
+    padding-top: 72px;
+  }
+  main .join {
+    margin-bottom: 120px;
+  }
+  main .join .container .join_box {
+    width: 573px;
+    height: 813px;
+    position: relative;
+    text-align: center;
+  }
+  main .join .container .join_box .join_title {
+    color: #495567;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+    padding-top: 509px;
+    margin-bottom: 40px;
+  }
+  main .join .container .join_box .join_text {
+    color: #939CAA;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+  main .join .container .join_box::after {
+    content: '';
+    position: absolute;
+    background-image: url("../img/care.png");
+    top: 0;
+    left: 64px;
+  }
+  main .join .container .join_box::before {
+    content: '';
+    background-image: url("../img/arrow_left.svg");
+    background-size: 740px 150px;
+    position: absolute;
+    width: 740px;
+    height: 150px;
+    z-index: 2;
+    top: 307px;
+    left: -70px;
+  }
+  main .employ {
+    margin-bottom: 120px;
+  }
+  main .employ .container {
+    width: 689px;
+    margin: 0 auto;
+  }
+  main .employ .container .employ_box {
+    width: 689px;
+    height: 128px;
+    padding: 32px 64px 35px 40px;
+    background-color: #F2F5F9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  main .employ .container .employ_box .employ_person .employ_title {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+    color: #495567;
+    margin-bottom: 8px;
+  }
+  main .employ .container .employ_box .employ_person .employ_place {
+    font-size: 15px;
+    line-height: 25px;
+    color: #495567;
+  }
+}
+
 .container {
   width: 1110px;
   margin: 0 auto;
@@ -724,9 +830,15 @@ main .locations .container .locations_title {
   padding-top: 72px;
 }
 
-main .map .container .map_img {
-  height: 543px;
+main .map .container_img {
+  width: 1110px;
+  margin: 0 auto;
   margin-bottom: 120px;
+}
+
+main .map .container_img .map_img {
+  width: 1110px;
+  height: 543px;
 }
 
 main .map .container .list_wrapper {
@@ -777,7 +889,11 @@ main .map .container .list_wrapper .list_text {
     color: #fff;
     padding-top: 72px;
   }
-  main .map .container .map_img {
+  main .map .container_img {
+    width: 689px;
+    margin: 0 auto;
+  }
+  main .map .container_img .map_img {
     width: 689px;
     height: 337px;
     margin-bottom: 120px;
@@ -837,7 +953,11 @@ main .map .container .list_wrapper .list_text {
     color: #fff;
     padding-top: 72px;
   }
-  main .map .map_img {
+  main .map .container_img {
+    width: 311px;
+    margin: 0 auto;
+  }
+  main .map .container_img .map_img {
     width: 311px;
     height: 152px;
     margin-bottom: 120px;
@@ -1229,6 +1349,10 @@ main .about .container .about_title {
   padding-top: 72px;
 }
 
+main .blurb {
+  overflow: hidden;
+}
+
 main .blurb .container .blurb_box_wrapper .blurb_box {
   width: 445px;
   height: 445px;
@@ -1259,6 +1383,17 @@ main .blurb .container .blurb_box_wrapper .mobility::after {
   top: 0;
 }
 
+main .blurb .container .blurb_box_wrapper .mobility::before {
+  content: '';
+  background-image: url("../img/arrow-blurb-left.svg");
+  width: 741px;
+  height: 151px;
+  position: absolute;
+  z-index: 2;
+  top: 268px;
+  left: 541px;
+}
+
 main .blurb .container .blurb_box_wrapper .better {
   margin-left: 665px;
 }
@@ -1269,6 +1404,17 @@ main .blurb .container .blurb_box_wrapper .better::before {
   background-image: url("../img/better.png");
   left: -665px;
   top: 0;
+}
+
+main .blurb .container .blurb_box_wrapper .better::after {
+  content: '';
+  background-image: url("../img/arrow_right.svg");
+  width: 741px;
+  height: 151px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  right: 925px;
 }
 
 main .values {
@@ -1497,7 +1643,7 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box .question .fas 
   right: 40px;
 }
 
-main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #text {
+main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
   font-size: 15px;
   line-height: 25px;
   color: #495567;
@@ -1838,6 +1984,16 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #text {
     left: 64px;
     top: 0;
   }
+  main .blurb .container .blurb_box_wrapper .mobility::before {
+    content: '';
+    background-image: url("../img/arrow-blurb-left.svg");
+    width: 741px;
+    height: 151px;
+    position: absolute;
+    z-index: 2;
+    top: 264px;
+    left: -66px;
+  }
   main .blurb .container .blurb_box_wrapper .better {
     margin-left: 665px;
     margin-left: 0;
@@ -1849,8 +2005,18 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #text {
     left: 64px;
     top: 0;
   }
+  main .blurb .container .blurb_box_wrapper .better::after {
+    content: '';
+    background-image: url("../img/arrow_right.svg");
+    width: 741px;
+    height: 151px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    right: 325px;
+  }
   main .values {
-    margin-bottom: 120px;
+    margin-bottom: 65px;
   }
   main .values .container .values__title {
     font-size: 48px;
@@ -2262,7 +2428,7 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #text {
     position: relative;
   }
   main .advantage .container .advantage_box_wrapper .easy::before {
-    content: '!!!';
+    content: '';
     background-image: url("../img/easy.png");
     width: 311px;
     height: 311px;

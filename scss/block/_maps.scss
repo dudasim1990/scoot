@@ -27,11 +27,16 @@ main{
     }
 
     .map{
-        .container{
+        .container_img{
+            width: 1110px;
+            margin: 0 auto;
+            margin-bottom: 120px;
             .map_img{
+                width: 1110px;
                 height: 543px;
-                margin-bottom: 120px;
             }
+        }
+        .container{
             .list_wrapper{
                 display: flex;
                 align-items: center;
@@ -78,8 +83,6 @@ main{
         background-repeat: no-repeat;
         margin-bottom: 120px;
         .container{
-            // width: 689px;
-            // margin: 0 auto;
             .locations_title{
                 font-size: 56px;
                 line-height: 56px;
@@ -91,12 +94,16 @@ main{
     }
 
     .map{
-        .container{
+        .container_img{
+            width: 689px;
+            margin: 0 auto;
             .map_img{
                 width: 689px;
                 height: 337px;
                 margin-bottom: 120px;
             }
+        }
+        .container{
             .list_wrapper{
                 display: flex;
                 flex-direction: column;
@@ -123,15 +130,13 @@ main{
             }
         }
     }
-
-
 }
 
 
 }
     
 
-
+// =========================
 
 
 
@@ -163,15 +168,16 @@ main{
     }
 
     .map{
-
-        .map_img{
+        .container_img{
             width: 311px;
-            height: 152px;
-            margin-bottom: 120px;
+            margin: 0 auto;
+            .map_img{
+                width: 311px;
+                height: 152px;
+                margin-bottom: 120px;
+            }
         }
-
-        .container{
-         
+        .container{      
             .list_wrapper{
                 display: flex;
                 flex-direction: column;
