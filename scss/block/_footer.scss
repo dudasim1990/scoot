@@ -150,6 +150,7 @@
                                 font-size: 15px;
                                 font-weight: 700;
                                 line-height: 25px;
+                                margin-bottom: 16px;
                                 &:hover{
                                     color: $yellow;
                                     transition: .4s ease all;
@@ -164,7 +165,6 @@
     
     
                     .footer_network{
-                        // display: flex;
                         .footer_network_link{
                             .fab{
                                 color: $yellow;
@@ -189,7 +189,6 @@
 }
 
 // =======================================
-
 
 @media only screen and (max-width: 375px){
     .footer{
@@ -257,6 +256,7 @@
                         flex-direction: column;
                         align-items: center;
                         .nav_item{
+                            margin-bottom: 16px;
                             .nav_link{
                                 font-family: 'Space Mono', sans-serif;
                                 color: $dim-grey;
