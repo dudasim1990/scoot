@@ -1026,9 +1026,9 @@ main .employ .container .employ_box .employ_person .employ_place {
     text-align: center;
   }
   main .employ .container .employ_box .employ_person .employ_title {
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1.07px;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.8px;
     color: #495567;
     margin-bottom: 8px;
   }
