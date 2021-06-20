@@ -1514,6 +1514,7 @@ main{
                         &::before{
                             content: '';
                             background-image: url('../img/easy.png');
+                            background-size: 311px 311px;
                             width: 311px;
                             height: 311px;
                             border-radius: 50%;
@@ -1536,7 +1537,6 @@ main{
                         }
                         .easy_easy{
                             &::after{
-                                display: none;
                                 content: '';
                                 background-image: url('../img/arrow_left.svg');
                                 background-size: 740px 150px;
@@ -1544,8 +1544,9 @@ main{
                                 width: 740px;
                                 height: 150px;
                                 z-index: 2;
-                                top: 307px;
-                                left: 541px;
+                                left: 0;
+                                top: 163px;
+                                
                             }
                         }
                         
@@ -1557,6 +1558,7 @@ main{
                         &::before{
                             content: '';
                             background-image: url('../img/coming.png');
+                            background-size: 311px 311px;
                             width: 311px;
                             height: 311px;
                             border-radius: 50%;
@@ -1578,15 +1580,14 @@ main{
                         }
                         .coming_coming{
                             &::before{
-                                display: none;
                                 content: '';
                                 background-image: url('../img/arrow_right.svg');
-                                // background-size: 756px 151px;
                                 position: absolute;
                                 width: 735px;
                                 height: 151px;
                                 z-index: 2;
-                                right: 480+445px;
+                                top: 0;
+                                right: 81px;
                             }
                         }
                     }
@@ -1596,6 +1597,7 @@ main{
                         &::after{
                             content: '';
                             background-image: url('../img/zero.png');
+                            background-size: 311px 311px;
                             width: 311px;
                             height: 311px;
                             border-radius: 50%;
@@ -1616,7 +1618,6 @@ main{
                             right: -1165px;
                         }
                         .zero_zero{
-                            // background-color: rgb(149, 226, 104);
                             &::after{
                                 content: '';
                                 background-image: url('../img/arrow_left.svg');
@@ -1625,8 +1626,8 @@ main{
                                 width: 740px;
                                 height: 150px;
                                 z-index: 2;
-                                top: 85px;
-                                left: 921px;
+                                top: 0;
+                                left: 100px;
                             }
                         }
                     }
@@ -1635,8 +1636,7 @@ main{
         }
         
     }
-    
-    
+
 }
 
 // ============= ABOUT =================

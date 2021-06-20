@@ -2685,6 +2685,7 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
   main .advantage .container .advantage_box_wrapper .easy::before {
     content: '';
     background-image: url("../img/easy.png");
+    background-size: 311px 311px;
     width: 311px;
     height: 311px;
     border-radius: 50%;
@@ -2706,7 +2707,6 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
     right: -1165px;
   }
   main .advantage .container .advantage_box_wrapper .easy .easy_easy::after {
-    display: none;
     content: '';
     background-image: url("../img/arrow_left.svg");
     background-size: 740px 150px;
@@ -2714,8 +2714,8 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
     width: 740px;
     height: 150px;
     z-index: 2;
-    top: 307px;
-    left: 541px;
+    left: 0;
+    top: 163px;
   }
   main .advantage .container .advantage_box_wrapper .coming {
     margin-left: 0;
@@ -2724,6 +2724,7 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
   main .advantage .container .advantage_box_wrapper .coming::before {
     content: '';
     background-image: url("../img/coming.png");
+    background-size: 311px 311px;
     width: 311px;
     height: 311px;
     border-radius: 50%;
@@ -2743,14 +2744,14 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
     right: 1174px;
   }
   main .advantage .container .advantage_box_wrapper .coming .coming_coming::before {
-    display: none;
     content: '';
     background-image: url("../img/arrow_right.svg");
     position: absolute;
     width: 735px;
     height: 151px;
     z-index: 2;
-    right: 925px;
+    top: 0;
+    right: 81px;
   }
   main .advantage .container .advantage_box_wrapper .zero {
     position: relative;
@@ -2758,6 +2759,7 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
   main .advantage .container .advantage_box_wrapper .zero::after {
     content: '';
     background-image: url("../img/zero.png");
+    background-size: 311px 311px;
     width: 311px;
     height: 311px;
     border-radius: 50%;
@@ -2784,8 +2786,8 @@ main .faqs .container .faqs_safe .faqs_answers_wrapper .faqs_box #texts {
     width: 740px;
     height: 150px;
     z-index: 2;
-    top: 85px;
-    left: 921px;
+    top: 0;
+    left: 100px;
   }
 }
 
